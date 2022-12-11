@@ -17,11 +17,11 @@ public class MonneyProcessor {
             int TFHB = FHB * 500;
             int TOHB = OHB * 100;
             int TTWB = TWB * 20;
-            // Operation to convert amout
+            // Operation to convert money
             int TTMN = TOTB + TFHB + TOHB + TTWB;// Total money
 
             System.out.println("Total Money is " + (float) TTMN);
-            // Its output format is //Total Money is 4000.0
+            // Its output format is //Total Money is TTMN
 
         }
 
