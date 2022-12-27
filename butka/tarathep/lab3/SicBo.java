@@ -1,3 +1,13 @@
+// This program will get type and what user want to bet then check condition to
+// play game and show lose or win.
+// Author: Tarathep Butka
+// ID: 653040452-2
+// Sec: 1
+// Date: December 19, 2022
+
+
+
+
 package butka.tarathep.lab3;
 
 import java.util.Scanner;
@@ -69,6 +79,7 @@ public class SicBo {
                     System.out.println("You loose 10 Baht");
                 }
                 // get input random number and check condition.
+                //if win display you win 90 or 60 or 30 baht.
 
             } else {
                 System.out.println("Incorrect input. Enter a number between 1-6 only.");
@@ -82,9 +93,3 @@ public class SicBo {
         scanner.close();
     }
 }
-// This program will get type and what user want to bet then check condition to
-// find out lose or win.
-// Author: Tarathep Butka
-// ID: 653040452-2
-// Sec: 1
-// Date: December 19, 2022

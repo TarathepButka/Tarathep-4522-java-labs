@@ -1,3 +1,12 @@
+// This program will receive input from user and sort number and calculate
+// minimum,maximum,average,median and standard deviation.
+// Author: Tarathep Butka
+// ID: 653040452-2
+// Sec: 1
+// Date: December 22, 2022
+
+
+
 package butka.tarathep.lab3;
 
 import java.util.Arrays;
@@ -39,9 +48,9 @@ public class BasicStat {
             double median;
             double standarddeviation = 0;
 
-            minimum = numArdb[0];
+            minimum = numArdb[0];//set minimum
 
-            maximum = numArdb[numArdb.length - 1];
+            maximum = numArdb[numArdb.length - 1];//set maximum
 
             for (int i = 0; i < dbArL; i++) {
                 saverage += numArdb[i];
@@ -76,9 +85,3 @@ public class BasicStat {
     }
 
 }
-// This program will receive input from user and sort number and calculate
-// minimum,maximum,average,median and standard deviation.
-// Author: Tarathep Butka
-// ID: 653040452-2
-// Sec: 1
-// Date: December 22, 2022
