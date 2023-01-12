@@ -1,6 +1,6 @@
 package butka.tarathep.lab4;
 
-import java.util.Arrays;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
