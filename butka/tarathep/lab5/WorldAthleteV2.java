@@ -41,7 +41,7 @@ public class WorldAthleteV2 {
         System.out.println(wisaksil);
         System.out.println(tom);
         BadmintonPlayer nitchaon = new BadmintonPlayer("Nitchaon Jindapol", 52, 1.63, Gender.FEMALE, "Thailand",
-                "31/03/1991", 67, 11);
+                "31/03/1998", 67, 11);
         System.out.println(
                 "Both " + ratchanok.getName() + " and " + nitchaon.getName() + " play " + BadmintonPlayer.getSport());
         ratchanok.compareAge(tom);

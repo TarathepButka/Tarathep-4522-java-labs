@@ -109,8 +109,8 @@ public class Athlete {
             System.out.println(athleteB.getName() + " is " + year + " year older than " + name);
         } else if (year == 0) {
             System.out.println(name + " is as old as " + athleteB.getName());
-        } else {
-            System.out.println(name + " is " + Math.abs(year) + " year older than " + athleteB.getName());
+        } else if (year < 0) {
+            System.out.println(athleteB.getName() + " is " + -year + " year younger than " + name);
         }
     }
 }
