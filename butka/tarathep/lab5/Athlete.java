@@ -106,11 +106,11 @@ public class Athlete {
         int year = (int) ChronoUnit.YEARS.between(dateBefore, dateAfter);
 
         if (year > 0) {
-            System.out.println(athleteB.getName() + " is " + year + " year older than " + name);
+            System.out.println(athleteB.getName() + " is " + year + " years older than " + name);
         } else if (year == 0) {
             System.out.println(name + " is as old as " + athleteB.getName());
         } else if (year < 0) {
-            System.out.println(athleteB.getName() + " is " + -year + " year younger than " + name);
+            System.out.println(athleteB.getName() + " is " + -year + " years younger than " + name);
         }
     }
 }

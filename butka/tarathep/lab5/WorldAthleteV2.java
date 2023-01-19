@@ -77,7 +77,7 @@ public class WorldAthleteV2 {
  * Tom Brady, 102.0kg, 1.93m, MALE, American, 1977-08-03, American Football,
  * Quarterback, New England Patriots
  * Both Ratchanok Intanon and Nitchaon Jindapol play Badminton
- * Tom Brady is 17 year older than Ratchanok Intanon
- * Nitchaon Jindapol is 3 year younger than Ratchanok Intanon
+ * Tom Brady is 17 years older than Ratchanok Intanon
+ * Nitchaon Jindapol is 3 years younger than Ratchanok Intanon
  * Tom Brady is taller than Wisaksil Wangek
  */
