@@ -1,8 +1,5 @@
 package butka.tarathep.lab5;
 
-import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
-
 // Author: Tarathep Butka
 // ID: 653040452-2
 // Sec: 1
@@ -38,22 +35,6 @@ class BadmintonPlayer extends Athlete {
     // the method for get sport
     public static String getSport() {
         return sport;
-    }
-
-    // The method to find athlete age and compere age. Example: athleteA is 17 year
-    // older than athleteB.
-    public void compareAge(Athlete athleteB) {
-        LocalDate dateBefore = athleteB.birthDate2;
-        LocalDate dateAfter = birthDate2;
-        int year = (int) ChronoUnit.YEARS.between(dateBefore, dateAfter);
-
-        if (year > 0) {
-            System.out.println(athleteB.getName() + " is " + year + " year older than " + name);
-        } else if (year == 0) {
-            System.out.println(name + " is as old as " + athleteB.getName());
-        } else {
-            System.out.println(name + " is " + Math.abs(year) + " year older than " + athleteB.getName());
-        }
     }
 
 }
