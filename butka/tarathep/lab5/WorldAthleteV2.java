@@ -50,7 +50,7 @@ public class WorldAthleteV2 {
         if (isTaller(wisaksil, tom)) {
             System.out.println(wisaksil.getName() + " is taller than " + tom.getName());
         } else {
-            System.out.println(tom.getName() + " is taller than " + wisaksil.getName());
+            System.out.println(wisaksil.getName() + " is not taller than " + tom.getName());
 
         }
 
