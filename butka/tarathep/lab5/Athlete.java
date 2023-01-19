@@ -22,7 +22,13 @@ public class Athlete {
         MALE, FEMALE
     }
 
-    // constucter
+    /**
+     * The constructor takes in several parameters including a player's name,
+     * weight, height, gender, nationality, and birthdate.
+     * 
+     * It assigns the value of these parameters to the corresponding class
+     * variables, such as name, weight, height, gender, nationality, and birthdate.
+     */
     public Athlete(String name, double weight, double height, Gender gender, String nationality, String birthdate) {
         this.name = name;
         this.weight = weight;
