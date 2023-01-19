@@ -78,6 +78,6 @@ public class WorldAthleteV2 {
  * Quarterback, New England Patriots
  * Both Ratchanok Intanon and Nitchaon Jindapol play Badminton
  * Tom Brady is 17 year older than Ratchanok Intanon
- * Nitchaon Jindapol is 3 year older than Ratchanok Intanon
+ * Nitchaon Jindapol is 3 year younger than Ratchanok Intanon
  * Tom Brady is taller than Wisaksil Wangek
  */
