@@ -2,6 +2,17 @@ package butka.tarathep.lab7;
 
 import javax.swing.*;
 
+// Author: Tarathep Butka
+// ID: 653040452-2
+// Sec: 1
+// Date: February 1, 2023
+
+/**
+ * The program extends "AthleteFormV2" and add a menu bar with various
+ * options such as "File", "Config", "Color", and "Size". The menu bar has
+ * several menu items such as "New", "Open", "Save", "Exit", "Red", "Green",
+ * "Blue", "16", "20", and "24".
+ */
 public class AthleteFormV3 extends AthleteFormV2 {
     protected JMenuBar menuBar;
     protected JMenu fileMenu, configMenu, colorMI, sizeMI;
@@ -11,6 +22,15 @@ public class AthleteFormV3 extends AthleteFormV2 {
         super(heading);
     }
 
+    /**
+     * The method creates a menu bar with two menus, "File" and "Config". The "File"
+     * menu
+     * contains four items: "New", "Open", "Save", and "Exit". The "Config" menu
+     * contains two sub-menus, "Color" and "Size". The "Color" sub-menu contains
+     * three items: "Red", "Green", and "Blue", while the "Size" sub-menu contains
+     * three items: "16", "20", and "24". Finally, the created menu bar is set as
+     * the menu bar for a JFrame.
+     */
     public void addMenus() {
         menuBar = new JMenuBar();
         fileMenu = new JMenu("File");
@@ -49,12 +69,10 @@ public class AthleteFormV3 extends AthleteFormV2 {
 
     }
 
-    @Override
-    public void addComponents() {
-        super.addComponents();
-
-    }
-
+    /**
+     * The method creates an instance of "AthleteFormV3" and calls the methods to
+     * addComponents, set the setFrameFeatures and addMenus.
+     */
     public static void createAndShowGUI() {
         AthleteFormV3 alfV3 = new AthleteFormV3("Athlete Form V3");
         alfV3.addComponents();
@@ -63,6 +81,11 @@ public class AthleteFormV3 extends AthleteFormV2 {
 
     }
 
+    /**
+     * The main method invokes the method "createAndShowGUI" on the Event Dispatch
+     * Thread using the SwingUtilities.invokeLater method, which is a recommended
+     * way to start a Swing GUI in Java.
+     */
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
