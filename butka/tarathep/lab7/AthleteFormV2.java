@@ -66,7 +66,7 @@ public class AthleteFormV2 extends AthleteForm {
         bioTextArea.setLineWrap(true);
         bioTextArea.setWrapStyleWord(true);
         scrollPane = new JScrollPane(bioTextArea, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
-                JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+                JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
         // Create a panel to hold the nation panel, sport panel, and bio label.
         spnabioPanel = new JPanel(new BorderLayout());
