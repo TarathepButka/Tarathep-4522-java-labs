@@ -49,14 +49,14 @@ public class AthleteFormV2 extends AthleteForm {
         nationalityComboBox = new JComboBox<String>(nationality);
 
         // Create a panel to hold the nationality label and combo box.
-        nationPanel = new JPanel(new GridLayout(1, 1));
+        nationPanel = new JPanel(new GridLayout(1, 2));
         nationPanel.add(nationalityLabel);
         nationPanel.add(nationalityComboBox);
         nationalityComboBox.setSelectedIndex(4);
 
         // Create a panel to hold the sport label and list.
         spoList = new JList<String>(sport);
-        sportPanel = new JPanel(new GridLayout(1, 1));
+        sportPanel = new JPanel(new GridLayout(1, 2));
         sportPanel.add(sportLabel);
         sportPanel.add(spoList);
         spoList.setSelectedIndex(2);
