@@ -76,9 +76,9 @@ public class AthleteFormV3 extends AthleteFormV2 {
      */
     public static void createAndShowGUI() {
         AthleteFormV3 alfV3 = new AthleteFormV3("Athlete Form V3");
+        alfV3.addMenus();
         alfV3.addComponents();
         alfV3.setFrameFeatures();
-        alfV3.addMenus();
 
     }
 
