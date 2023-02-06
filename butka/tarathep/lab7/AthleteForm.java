@@ -49,14 +49,14 @@ public class AthleteForm extends MySimpleWindow {
         gendertextField = new JTextField();
 
         // Create radio buttons for gender selection
-        maleRadioButton = new JRadioButton("Male", true);
+        maleRadioButton = new JRadioButton("Male");
         femaleRadioButton = new JRadioButton("Female");
 
         // Create a button group for the radio buttons
         genderPanel = new JPanel();
-        ButtonGroup genderBg = new ButtonGroup();
         genderPanel.add(maleRadioButton);
         genderPanel.add(femaleRadioButton);
+        ButtonGroup genderBg = new ButtonGroup();
         genderBg.add(maleRadioButton);
         genderBg.add(femaleRadioButton);
 

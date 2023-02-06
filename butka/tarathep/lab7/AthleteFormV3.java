@@ -31,14 +31,14 @@ public class AthleteFormV3 extends AthleteFormV2 {
      * three items: "16", "20", and "24". Finally, the created menu bar is set as
      * the menu bar for a JFrame.
      */
-    public void addMenus() {
+    protected void addMenus() {
         menuBar = new JMenuBar();
         fileMenu = new JMenu("File");
-        ImageIcon newIcon = new ImageIcon(getClass().getResource("images/Newicon.png"));
+        ImageIcon newIcon = new ImageIcon(getClass().getResource("../lab7/images/Newicon.png"));
         newMI = new JMenuItem("New", newIcon);
-        ImageIcon openIcon = new ImageIcon(getClass().getResource("images/Openicon.png"));
+        ImageIcon openIcon = new ImageIcon(getClass().getResource("../lab7/images/Openicon.png"));
         openMI = new JMenuItem("Open", openIcon);
-        ImageIcon saveIcon = new ImageIcon(getClass().getResource("images/Saveicon.png"));
+        ImageIcon saveIcon = new ImageIcon(getClass().getResource("../lab7/images/Saveicon.png"));
         saveMI = new JMenuItem("Save", saveIcon);
         exitMI = new JMenuItem("Exit");
         configMenu = new JMenu("Config");
@@ -55,6 +55,7 @@ public class AthleteFormV3 extends AthleteFormV2 {
         fileMenu.add(newMI);
         fileMenu.add(openMI);
         fileMenu.add(saveMI);
+        fileMenu.addSeparator();
         fileMenu.add(exitMI);
         configMenu.add(colorMI);
         configMenu.add(sizeMI);

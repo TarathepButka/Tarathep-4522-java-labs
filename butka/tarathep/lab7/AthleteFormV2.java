@@ -21,7 +21,7 @@ public class AthleteFormV2 extends AthleteForm {
     protected JList<String> spoList;
     protected String[] sport = { "Badminton", "Boxing", "Football", "Running" },
             nationality = { "American", "Chinese", "Indonesian", "Japanese", "Thai", "Vietnamese" };
-    protected JPanel centerPanel, bioPanel, sportPanel, nationPanel, spnabioPanel;
+    protected JPanel centerPanel, bioPanel, sportPanel, nationPanel, spnabioPanel, spnaPanel;
     protected JScrollPane scrollPane;
 
     public AthleteFormV2(String heading) {
@@ -37,7 +37,7 @@ public class AthleteFormV2 extends AthleteForm {
      * add center panel to main panel and add main panel to JFrame.
      */
     @Override
-    public void addComponents() {
+    protected void addComponents() {
         super.addComponents();
 
         // Create labels for the nationality, sport, and bio.
@@ -68,10 +68,13 @@ public class AthleteFormV2 extends AthleteForm {
         scrollPane = new JScrollPane(bioTextArea, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
                 JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
+        spnaPanel = new JPanel(new BorderLayout());
+        spnaPanel.add(nationPanel, BorderLayout.NORTH);
+        spnaPanel.add(sportPanel, BorderLayout.CENTER);
+
         // Create a panel to hold the nation panel, sport panel, and bio label.
         spnabioPanel = new JPanel(new BorderLayout());
-        spnabioPanel.add(nationPanel, BorderLayout.NORTH);
-        spnabioPanel.add(sportPanel, BorderLayout.CENTER);
+        spnabioPanel.add(spnaPanel, BorderLayout.CENTER);
         spnabioPanel.add(bioLabel, BorderLayout.SOUTH);
 
         // Create a panel to hold the spnabio panel and scroll pane.
