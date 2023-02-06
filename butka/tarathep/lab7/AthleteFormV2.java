@@ -63,7 +63,7 @@ public class AthleteFormV2 extends AthleteForm {
 
         // Create a text area for the bio.
         bioTextArea = new JTextArea();
-        bioTextArea.setRows(4);
+        bioTextArea.setRows(6);
         bioTextArea.setLineWrap(true);
         bioTextArea.setWrapStyleWord(true);
         scrollPane = new JScrollPane(bioTextArea);
