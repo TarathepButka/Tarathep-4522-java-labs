@@ -1,8 +1,21 @@
 package butka.tarathep.lab8;
 
+// Author: Tarathep Butka
+// ID: 653040452-2
+// Sec: 1
+// Date: February,7 , 2023
+
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * The program extends "AthleteFormV4" and change the background color of all
+ * the text fields,the font of all the labels,the font color of the sport list
+ * to blue,the font of the button, the background color of the bio text area,set
+ * a tooltip text that will show a message when a mouse is moved over the
+ * buttons,change the font,color of all the menus and menu items and set
+ * tooltip.
+ */
 public class AthleteFormV5 extends AthleteFormV4 {
 
     public AthleteFormV5(String heading) {
@@ -12,10 +25,10 @@ public class AthleteFormV5 extends AthleteFormV4 {
     @Override
     protected void addComponents() {
         super.addComponents();
-      
-        //Change the background color of all the text fields (name, weight, height, and
-        //date of birth) to a color defined in R, G, B as 167,59,36.
-        
+
+        // Change the background color of all the text fields (name, weight, height, and
+        // date of birth) to a color defined in R, G, B as 167,59,36.
+
         nametextField.setBackground(new Color(167, 59, 36));
         weighttextField.setBackground(new Color(167, 59, 36));
         heighttextField.setBackground(new Color(167, 59, 36));

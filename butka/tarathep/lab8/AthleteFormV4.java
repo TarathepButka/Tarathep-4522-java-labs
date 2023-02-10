@@ -1,5 +1,10 @@
 package butka.tarathep.lab8;
 
+// Author: Tarathep Butka
+// ID: 653040452-2
+// Sec: 1
+// Date: February,6 , 2023
+
 import javax.swing.*;
 import java.awt.*;
 import butka.tarathep.lab7.*;
@@ -64,9 +69,9 @@ public class AthleteFormV4 extends AthleteFormV3 {
         yearepSlider.setPaintLabels(true);
 
         // create a panel for the year of experience slider
-        sliderPanel = new JPanel(new GridLayout(2, 1));
-        sliderPanel.add(yearepLabel);
-        sliderPanel.add(yearepSlider);
+        sliderPanel = new JPanel(new BorderLayout());
+        sliderPanel.add(yearepLabel, BorderLayout.NORTH);
+        sliderPanel.add(yearepSlider, BorderLayout.CENTER);
         centerPanel.add(sliderPanel, BorderLayout.SOUTH);
     }
 
