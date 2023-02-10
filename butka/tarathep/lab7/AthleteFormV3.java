@@ -34,11 +34,11 @@ public class AthleteFormV3 extends AthleteFormV2 {
     protected void addMenus() {
         menuBar = new JMenuBar();
         fileMenu = new JMenu("File");
-        ImageIcon newIcon = new ImageIcon(getClass().getResource("../lab7/images/Newicon.png"));
+        ImageIcon newIcon = new ImageIcon(getClass().getResource("/images/Newicon.png"));
         newMI = new JMenuItem("New", newIcon);
-        ImageIcon openIcon = new ImageIcon(getClass().getResource("../lab7/images/Openicon.png"));
+        ImageIcon openIcon = new ImageIcon(getClass().getResource("/images/Openicon.png"));
         openMI = new JMenuItem("Open", openIcon);
-        ImageIcon saveIcon = new ImageIcon(getClass().getResource("../lab7/images/Saveicon.png"));
+        ImageIcon saveIcon = new ImageIcon(getClass().getResource("/images/Saveicon.png"));
         saveMI = new JMenuItem("Save", saveIcon);
         exitMI = new JMenuItem("Exit");
         configMenu = new JMenu("Config");
