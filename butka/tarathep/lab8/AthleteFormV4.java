@@ -69,9 +69,9 @@ public class AthleteFormV4 extends AthleteFormV3 {
         yearepSlider.setPaintLabels(true);
 
         // create a panel for the year of experience slider
-        sliderPanel = new JPanel(new GridLayout(2,1));
-        sliderPanel.add(yearepLabel);
-        sliderPanel.add(yearepSlider);
+        sliderPanel = new JPanel(new BorderLayout());
+        sliderPanel.add(yearepLabel, BorderLayout.NORTH);
+        sliderPanel.add(yearepSlider, BorderLayout.CENTER);
         centerPanel.add(sliderPanel, BorderLayout.SOUTH);
     }
 
