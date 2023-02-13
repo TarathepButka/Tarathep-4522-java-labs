@@ -36,7 +36,7 @@ public class AthleteFormV7 extends AthleteFormV6 {
         super.addComponents();
 
         imagePanel = new JPanel(new BorderLayout());
-        imagePanel.setPreferredSize(new Dimension(400, 300));
+        imagePanel.setPreferredSize(new Dimension(500, 300));
         readImage = new ReadImage();
         imagePanel.add(readImage);
         mainPanel.add(imagePanel, BorderLayout.SOUTH);

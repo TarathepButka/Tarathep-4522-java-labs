@@ -34,6 +34,7 @@ public class AthleteFormV6 extends AthleteFormV5 {
         olympicSymbolPanel = new JPanel(new BorderLayout());
         olympicSymbolPanel.setPreferredSize(new Dimension(200, 100));
         olympicSymbol = new OlympicSymbol();
+        olympicSymbol.setBackground(Color.WHITE);
         olympicSymbolPanel.add(olympicSymbol);
         add(olympicSymbolPanel, BorderLayout.NORTH);
 
