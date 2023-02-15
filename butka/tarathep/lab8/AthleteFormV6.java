@@ -13,8 +13,8 @@ import java.awt.*;
  * window.
  */
 public class AthleteFormV6 extends AthleteFormV5 {
-    JPanel olympicSymbolPanel;
-    OlympicSymbol olympicSymbol;
+    protected JPanel olympicSymbolPanel;
+    protected OlympicSymbol olympicSymbol;
 
     public AthleteFormV6(String heading) {
         super(heading);

@@ -16,10 +16,10 @@ import butka.tarathep.lab7.*;
  * south of centerPanel.
  */
 public class AthleteFormV4 extends AthleteFormV3 {
-    JLabel hobbiesLabel, yearepLabel;
-    JPanel hobPanel, hobboxPanel, sliderPanel;
-    JCheckBox rdCheckBox, gdCheckBox, wcCheckBox, spCheckBox, otCheckBox;
-    JSlider yearepSlider;
+    protected JLabel hobbiesLabel, yearepLabel;
+    protected JPanel hobPanel, hobboxPanel, sliderPanel;
+    protected JCheckBox rdCheckBox, gdCheckBox, wcCheckBox, spCheckBox, otCheckBox;
+    protected JSlider yearepSlider;
 
     public AthleteFormV4(String heading) {
         super(heading);

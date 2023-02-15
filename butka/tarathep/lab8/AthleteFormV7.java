@@ -17,8 +17,8 @@ import java.awt.image.BufferedImage;
  * buttons.
  */
 public class AthleteFormV7 extends AthleteFormV6 {
-    JPanel imagePanel;
-    ReadImage readImage;
+    protected JPanel imagePanel;
+    protected ReadImage readImage;
 
     public AthleteFormV7(String heading) {
         super(heading);
