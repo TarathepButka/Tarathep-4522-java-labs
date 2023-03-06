@@ -20,6 +20,7 @@ public class BasicStat {
         scanner.close();
         String[] numAr = nums.split(" ");
         double[] numArdb = new double[numAr.length];
+        
 
         /*
          * import number from user.

@@ -18,6 +18,7 @@ public class AthleteForm extends MySimpleWindow {
     protected JTextField nametextField, weighttextField, heighttextField, bdtextField, gendertextField;
     protected JRadioButton maleRadioButton, femaleRadioButton;
     protected JPanel typePanel, genderPanel;
+    protected ButtonGroup genderBg = new ButtonGroup();
 
     public AthleteForm(String heading) {
         super(heading);
@@ -56,7 +57,7 @@ public class AthleteForm extends MySimpleWindow {
         genderPanel = new JPanel();
         genderPanel.add(maleRadioButton);
         genderPanel.add(femaleRadioButton);
-        ButtonGroup genderBg = new ButtonGroup();
+        
         genderBg.add(maleRadioButton);
         genderBg.add(femaleRadioButton);
 
