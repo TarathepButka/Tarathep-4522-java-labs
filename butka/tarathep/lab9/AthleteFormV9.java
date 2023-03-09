@@ -57,6 +57,7 @@ public class AthleteFormV9 extends AthleteFormV8 implements ItemListener {
         newMI.addActionListener(this);
         newMI.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, ActionEvent.CTRL_MASK));
         newMI.setMnemonic(KeyEvent.VK_N);
+        
 
         // Add action listeners and shortcuts for open menu items.
         openMI.addActionListener(this);
@@ -71,7 +72,7 @@ public class AthleteFormV9 extends AthleteFormV8 implements ItemListener {
         // Add action listeners and shortcuts for exit menu items.
         exitMI.addActionListener(this);
         exitMI.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_Q, ActionEvent.CTRL_MASK));
-        exitMI.setMnemonic(KeyEvent.VK_Q);
+        exitMI.setMnemonic(KeyEvent.VK_X);
 
         // Add item listeners for radio buttons
         femaleRadioButton.addItemListener(this);
