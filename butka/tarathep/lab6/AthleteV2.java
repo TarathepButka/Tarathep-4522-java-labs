@@ -8,7 +8,7 @@ import butka.tarathep.lab5.Athlete;
 // Date: January 23, 2023
 
 // Class definition for AthleteV2, which extends the Athlete class
-class AthleteV2 extends Athlete {
+public class AthleteV2 extends Athlete {
 
     // Constructor for AthleteV2
     public AthleteV2(String name, double weight, double height, Gender gender, String nationality, String birthdate) {

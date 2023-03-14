@@ -10,7 +10,6 @@ import java.time.temporal.ChronoUnit;
 // Date: January 15, 2022
 
 public class Athlete {
-    public static final butka.tarathep.lab5.Athlete.Gender Gender = null;
     // protected instance variables
     protected String name, nationality, birthdate = "01/01/0001";
     protected double weight, height;
