@@ -19,8 +19,8 @@ class BadmintonPlayer extends Athlete {
      * corresponding class variables.
      */
     public BadmintonPlayer(String name, double weight, double height, Gender gender, String nationality,
-            String birthDate2, double racketLenght, int worldRanking) {
-        super(name, weight, height, gender, nationality, birthDate2);
+            String dob, double racketLenght, int worldRanking) {
+        super(name, weight, height, gender, nationality, dob);
         this.racketLenght = racketLenght;
         this.worldRanking = worldRanking;
     }
@@ -29,7 +29,7 @@ class BadmintonPlayer extends Athlete {
     // <nationality>, <birthdate>, <sport>, <racketLenght>cm, rank:<worldRanking>
     public String toString() {
         return name + ", " + weight + "kg, " + height + "m, " + gender + ", " + nationality + ", "
-                + birthDate2 + ", " + sport + ", " + racketLenght + "cm, " + "rank:" + worldRanking;
+                + dob + ", " + sport + ", " + racketLenght + "cm, " + "rank:" + worldRanking;
     }
 
     // the method for get sport

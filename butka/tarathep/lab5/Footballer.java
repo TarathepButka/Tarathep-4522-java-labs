@@ -17,9 +17,9 @@ class Footballer extends Athlete {
      * same parameters, and assigns the position and team to the
      * corresponding class variables.
      */
-    public Footballer(String name, double weight, double height, Gender gender, String nationality, String birthDate2,
+    public Footballer(String name, double weight, double height, Gender gender, String nationality, String dob,
             String position, String team) {
-        super(name, weight, height, gender, nationality, birthDate2);
+        super(name, weight, height, gender, nationality, dob);
         this.position = position;
         this.team = team;
     }
@@ -28,7 +28,7 @@ class Footballer extends Athlete {
     // <nationality>, <birthdate>, <sport>, <position>, <team>
     public String toString() {
         return name + ", " + weight + "kg, " + height + "m, " + gender + ", " + nationality + ", "
-                + birthDate2 + ", " + sport + ", " + position + ", " + team;
+                + dob + ", " + sport + ", " + position + ", " + team;
     }
 
 }

@@ -1,5 +1,6 @@
 package butka.tarathep.lab5;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
@@ -9,13 +10,12 @@ import java.time.temporal.ChronoUnit;
 // Sec: 1
 // Date: January 15, 2022
 
-public class Athlete {
+public class Athlete  implements Serializable{
     // protected instance variables
     protected String name, nationality, birthdate = "01/01/0001";
     protected double weight, height;
     protected Gender gender;
-    protected DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-    protected LocalDate birthDate2 = LocalDate.parse(String.format("%s", birthdate), format);
+    protected LocalDate dob;
 
     // Enum for gender
     public enum Gender {
@@ -36,7 +36,8 @@ public class Athlete {
         this.gender = gender;
         this.nationality = nationality;
         this.birthdate = birthdate;
-        birthDate2 = LocalDate.parse(String.format("%s", birthdate), format);
+        DateTimeFormatter formater = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        this.dob = LocalDate.parse(birthdate, formater);
     }
 
     // the method use to get name.
@@ -81,27 +82,27 @@ public class Athlete {
 
     // the method use to get birthdate.
     public LocalDate getBirthdate() {
-        return birthDate2;
+        return dob;
     }
 
     // this method is for the value of the birthdate variable reconfiguration.
     public void setBirthdate(LocalDate birthDate2) {
-        this.birthDate2 = birthDate2;
+        this.dob = dob;
     }
 
     // Return the message example Athlete [<name>, <weight>kg, <height>m, <gender>,
     // <nationality>, <birthdate>].
     public String toString() {
         return "Athlete " + "[" + name + ", " + weight + "kg, " + height + "m, " + gender + ", " + nationality + ", "
-                + birthDate2 + "]";
+                + dob + "]";
 
     }
 
     // The method to find athlete age and compere age. Example: athleteA is 17 year
     // older than athleteB.
     public void compareAge(Athlete athleteB) {
-        LocalDate dateBefore = athleteB.birthDate2;
-        LocalDate dateAfter = birthDate2;
+        LocalDate dateBefore = athleteB.dob;
+        LocalDate dateAfter = dob;
         int year = (int) ChronoUnit.YEARS.between(dateBefore, dateAfter);
 
         if (year > 0) {

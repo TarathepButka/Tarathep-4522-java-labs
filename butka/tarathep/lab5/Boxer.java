@@ -17,9 +17,9 @@ class Boxer extends Athlete {
      * same parameters, and assigns the division and golvesize to the
      * corresponding class variables.
      */
-    public Boxer(String name, double weight, double height, Gender gender, String nationality, String birthDate2,
+    public Boxer(String name, double weight, double height, Gender gender, String nationality, String dob,
             String division, String golveSize) {
-        super(name, weight, height, gender, nationality, birthDate2);
+        super(name, weight, height, gender, nationality, dob);
         this.division = division;
         this.golveSize = golveSize;
 
@@ -29,7 +29,7 @@ class Boxer extends Athlete {
     // <nationality>, <birthdate>, <sport>, <division>, <golveSize>
     public String toString() {
         return name + ", " + weight + "kg, " + height + "m, " + gender + ", " + nationality + ", "
-                + birthDate2 + ", " + sport + ", " + division + ", " + golveSize;
+                + dob + ", " + sport + ", " + division + ", " + golveSize;
     }
 
 }
