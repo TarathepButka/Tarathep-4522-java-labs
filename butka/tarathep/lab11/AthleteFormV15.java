@@ -38,6 +38,7 @@ public class AthleteFormV15 extends AthleteFormV14 {
         // Instantiating a JFileChooser object.
         JFileChooser fileChooser = new JFileChooser();
         // Displaying a file chooser dialog.
+        fileChooser.setCurrentDirectory(new File("."));
         int filechooses = fileChooser.showSaveDialog(this);
         // If the user selects a file.
         if (filechooses == JFileChooser.APPROVE_OPTION) {
@@ -74,6 +75,7 @@ public class AthleteFormV15 extends AthleteFormV14 {
         // Instantiating a JFileChooser object.
         JFileChooser fileChooser = new JFileChooser();
         // Displaying a file chooser dialog.
+        fileChooser.setCurrentDirectory(new File("."));
         int filechooses = fileChooser.showOpenDialog(this);
         // If the user selects a file.
         if (filechooses == JFileChooser.APPROVE_OPTION) {
@@ -87,7 +89,7 @@ public class AthleteFormV15 extends AthleteFormV14 {
                 String name = dis.readUTF();
                 int year = dis.readInt();
                 // Check the slider value and appending the appropriate message to the bioset.
-                if (year == 1) {
+                if (year <= 1) {
                     bioset.append("\n" + name + " has " + year + " year of experiences");
                 } else if (year > 1) {
                     bioset.append("\n" + name + " has " + year + " years of experiences");

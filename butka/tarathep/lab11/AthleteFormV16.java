@@ -52,9 +52,11 @@ public class AthleteFormV16 extends AthleteFormV15 {
         } else if (femaleRadioButton.isSelected()) {
             gender = AthleteV2.Gender.FEMALE;
         }
+        String dob = bdtextField.getText();
         // Instantiating a JFileChooser object.
         JFileChooser fileChooser = new JFileChooser();
         // Displaying a file chooser dialog.
+        fileChooser.setCurrentDirectory(new File("."));
         int filechooses = fileChooser.showSaveDialog(this);
         // If the user selects a file.
         if (filechooses == JFileChooser.APPROVE_OPTION) {
@@ -67,7 +69,7 @@ public class AthleteFormV16 extends AthleteFormV15 {
                 ObjectOutputStream oos = new ObjectOutputStream(fos);
                 // Create an AthleteV2 object and write athlete to the file.
                 AthleteV2 athlete = new AthleteV2(nametextField.getText(), weight, height, gender,
-                        nationalityComboBox.getSelectedItem().toString(), bdtextField.getText());
+                        nationalityComboBox.getSelectedItem().toString(), dob);
                 oos.writeObject(athlete);
                 // Close the output stream.
                 oos.close();
@@ -86,6 +88,7 @@ public class AthleteFormV16 extends AthleteFormV15 {
         // Instantiating a JFileChooser object.
         JFileChooser fileChooser = new JFileChooser();
         // Displaying a file chooser dialog.
+        fileChooser.setCurrentDirectory(new File("."));
         int filechooses = fileChooser.showOpenDialog(this);
         // If the user selects a file.
         if (filechooses == JFileChooser.APPROVE_OPTION) {

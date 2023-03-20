@@ -86,7 +86,7 @@ public class Athlete  implements Serializable{
     }
 
     // this method is for the value of the birthdate variable reconfiguration.
-    public void setBirthdate(LocalDate birthDate2) {
+    public void setBirthdate(LocalDate dob) {
         this.dob = dob;
     }
 

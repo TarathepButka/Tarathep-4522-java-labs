@@ -1,7 +1,5 @@
 package butka.tarathep.lab6;
 
-import java.io.Serializable;
-
 import butka.tarathep.lab5.Athlete;
 
 // Author: Tarathep Butka

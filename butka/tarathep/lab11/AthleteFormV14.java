@@ -38,6 +38,7 @@ public class AthleteFormV14 extends AthleteFormV13 {
         // Instantiating a JFileChooser object.
         JFileChooser fileChooser = new JFileChooser();
         // Displaying a file chooser dialog.
+        fileChooser.setCurrentDirectory(new File("."));
         int filechooses = fileChooser.showSaveDialog(this);
         // If the user selects a file.
         if (filechooses == JFileChooser.APPROVE_OPTION) {
@@ -74,6 +75,9 @@ public class AthleteFormV14 extends AthleteFormV13 {
                 else if (selectedHobbies > 1) {
                     // Display a message dialog that a hobbies is being saved.
                     JOptionPane.showMessageDialog(null, "Saving hobbies in file " + file.getAbsolutePath());
+                } else {
+                    // Display a message dialog that a hobby is being saved.
+                    JOptionPane.showMessageDialog(null, "Saving a hobby in file " + file.getAbsolutePath());
                 }
                 // If error occurs while writing to the file.
             } catch (IOException e) {
@@ -92,6 +96,7 @@ public class AthleteFormV14 extends AthleteFormV13 {
         // Instantiating a JFileChooser object.
         JFileChooser fileChooser = new JFileChooser();
         // Displaying a file chooser dialog.
+        fileChooser.setCurrentDirectory(new File("."));
         int filechoose = fileChooser.showOpenDialog(this);
         if (filechoose == JFileChooser.APPROVE_OPTION) {
             // Getting the selected file.
@@ -121,7 +126,10 @@ public class AthleteFormV14 extends AthleteFormV13 {
                 // Checking which menu item was selected and appending the message to bioset.
                 if (selectedHobbies == 1) {
                     bioset.append(athleteName + " has a hobby as " + hobbiesString);
-                } else {
+                } else if (selectedHobbies == 0) {
+                    bioset.append(athleteName + " does not have any hobby");
+                }
+                else {
                     bioset.append(athleteName + " has hobbies as " + hobbiesString);
                 }
                 // Closing the BufferedReader.
