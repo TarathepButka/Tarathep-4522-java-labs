@@ -107,30 +107,25 @@ public class AthleteFormV14 extends AthleteFormV13 {
                 BufferedReader bufferedReader = new BufferedReader(reader);
 
                 // Reading the first and second lines of the file.
-                String line1 = bufferedReader.readLine();
-                String line2 = bufferedReader.readLine();
+                String name = bufferedReader.readLine();
+                String hobbies = bufferedReader.readLine();
 
                 // Splitting the first line into two parts using the "," separator.
-                String[] parts = line1.split(",");
+                String[] parts = name.split(",");
                 String athleteName = parts[0];
-                String hobbies = line2;
 
-                // Joining the hobbies array into a comma-separated string.
-                String hobbiesString = String.join(", ", hobbies);
-
-                // Removing the ", " from the hobbies string.
-                if (!hobbiesString.isEmpty()) {
-                    hobbiesString = hobbiesString.substring(0, hobbiesString.length() - 2);
-                }
-
-                // Checking which menu item was selected and appending the message to bioset.
-                if (selectedHobbies == 1) {
-                    bioset.append(athleteName + " has a hobby as " + hobbiesString);
-                } else if (selectedHobbies == 0) {
+                if (hobbies != null) {
+                    // Split ", " into hobbies.
+                    String[] hoblist = hobbies.split(", ");
+                    // Joining the hoblist array into a comma-separated string.
+                    String hobbiesString = String.join(", ", hoblist);
+                    if (hoblist.length == 1) {
+                        bioset.append(athleteName + " has a hobby as " + hobbiesString);
+                    } else if (hoblist.length > 1) {
+                        bioset.append(athleteName + " has hobbies as " + hobbiesString);
+                    }
+                } else {
                     bioset.append(athleteName + " does not have any hobby");
-                }
-                else {
-                    bioset.append(athleteName + " has hobbies as " + hobbiesString);
                 }
                 // Closing the BufferedReader.
                 bufferedReader.close();
