@@ -84,7 +84,7 @@ public class AthleteFormV2 extends AthleteForm {
 
         // Add the center panel to the main panel in the center.
         mainPanel.add(centerPanel, BorderLayout.CENTER);
-
+        
     }
 
     /**
@@ -112,3 +112,21 @@ public class AthleteFormV2 extends AthleteForm {
     }
 
 }
+
+
+// Lab5 OPP getter setter
+// Lab7
+// -AthleteForm  --> SimpleGui
+// -AthleteFormV2 --> JComboBox,JTextArea,JScrollPane,JList
+// -AthleteFormV3 --> JMenuBar,JMenuItem,ImageIcon
+// Lab8
+// -AthleteFormV4  --> JSlider,JCheckBox
+// -AthleteFormV5  --> Color,Font
+// -AthleteFormV6  --> OlympicSymbol 
+// Lab9
+// -AthleteFormV8  --> ActionListener 
+// -AthleteFormV9 --> ItemListener 
+// -AthleteFormV10  --> ListSelectionListener,ChangeListener
+// Lab10
+// -AthleteFormV11 --> dataJMenu,sortMenu
+// Lab11 read write file

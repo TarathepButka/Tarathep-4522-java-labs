@@ -15,4 +15,5 @@ interface Spinter {
 
     // Method to get the speed of a sprinter
     public double setSpeed(double speed);
+
 }
